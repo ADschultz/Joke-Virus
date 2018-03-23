@@ -91,11 +91,55 @@ a {
   margin: 0;
   padding: 4px 10px;
 
-  background: rgb(96, 125, 139);
+  background: rgb(22, 125, 139);
   color: rgb(202, 238, 255);
 
   font-size: 18px;
 }
+
+.thumbnail-title2 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+
+  background: rgb(25, 196, 34);
+  color: rgb(0, 0, 0);
+
+  font-size: 18px;
+}
+
+.thumbnail-title3 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+
+  background: rgb(183, 32, 18);
+  color: rgb(201, 194, 193);
+
+  font-size: 18px;
+}
+
+.thumbnail-title4 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+
+  background: rgb(16, 27, 237);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.thumbnail-title5 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+
+  background: rgb(84, 36, 173);
+  color: rgb(212, 214, 214);
+    font-size: 18px;
+  }
+
+
 
 .content-container {
   flex: 1 1 auto;
