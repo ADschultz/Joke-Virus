@@ -6,3 +6,11 @@ This project is designed to simulate a malware-ridden website and recreate some 
 - Page that forces the browser into fullscreen mode against the user's will
 
 All group members will contribute to the design of the basic webpage layout. Implementation of the seperate features outlined above will be divided between members, with 1-2 assigned to each.
+
+The members of this group are:
+Aaron SchultzII 
+Emily Seal 
+Jacob Iwaniec 
+Michael Kling
+Richard Sekol
+Ryan Stuk
