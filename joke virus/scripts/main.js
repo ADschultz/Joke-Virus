@@ -14,6 +14,7 @@ function setDetails(imageUrl, titleText) {
   detailTitle.textContent = titleText;
 }
 
+
 function imageFromThumb(thumbnail) {
   'use strict';
   return thumbnail.getAttribute('data-image-url');
