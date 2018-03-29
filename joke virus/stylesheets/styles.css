@@ -48,12 +48,17 @@ a {
 }
 
 .logo-text {
-  background: white;
+  background: rgb(110, 122, 162);
 
   text-align: center;
-  text-transform: uppercase;
-  font-family: lakeshore;
+  font-family: "Hoefler Text";
   font-size: 37px;
+}
+
+.logo-text2 {
+  text-align: center;
+  font-family: "Hoefler Text";
+  font-size: 25px;
 }
 
 .main-content {
