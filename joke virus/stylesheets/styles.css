@@ -47,7 +47,7 @@ a {
   flex: 0 1 auto;
 }
 
-.logo-text {
+.logo-text { /*changed this around a little-added diff background color */
   background: rgb(110, 122, 162);
 
   text-align: center;
@@ -55,7 +55,7 @@ a {
   font-size: 37px;
 }
 
-.logo-text2 {
+.logo-text2 { /* added this for second header */
   text-align: center;
   font-family: "Hoefler Text";
   font-size: 25px;
