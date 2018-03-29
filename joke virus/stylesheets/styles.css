@@ -50,9 +50,10 @@ a {
 }
 
 .main-content {
-  flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 250px;
 }
 
 .thumbnail-item {
@@ -70,15 +71,7 @@ a {
 }
 
 .thumbnail-list {
-  flex: 0 1 auto;
-  order: 2;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 20px 0;
-
-  white-space: nowrap;
-  overflow-x: auto;
+  flex-basis: 100%;
 }
 
 .thumbnail-image {
