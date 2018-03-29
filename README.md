@@ -8,9 +8,17 @@ This project is designed to simulate a malware-ridden website and recreate some 
 All group members will contribute to the design of the basic webpage layout. Implementation of the seperate features outlined above will be divided between members, with 1-2 assigned to each.
 
 The members of this group are:
-Aaron SchultzII 
-Emily Seal 
-Jacob Iwaniec 
+Aaron SchultzII
+Emily Seal
+Jacob Iwaniec
 Michael Kling
 Richard Sekol
 Ryan Stuk
+
+
+
+change logo
+
+3/29/3028
+Richard made placeholder files and links
+started on form for his virus
