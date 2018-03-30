@@ -18,3 +18,5 @@ Ryan Stuk
 Project Submission one contributions:
 
 Emily- Added a scroll bar, took out the duplicate boxes for the genres, added some background colors, changed the font of the title and the actual title itself, added a little blurb underneath title
+
+Jacob Iwaniec - For my page, I was going to have a a game advertised to download at the top of the page, then below it like 15 different different download buttons. Some will have pop ups that say "not this one" or "try again". Some will just be picture
