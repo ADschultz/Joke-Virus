@@ -29,24 +29,36 @@ body {
   flex-direction: column;
 
   font-size: 10px;
-  background: rgb(149, 194, 215);
+  background: rgb(47,79,79);
 }
 
 a {
   text-decoration: none;
 }
 
+.scrollbar { /* Emily added this */
+  display: block;
+  width: auto;
+  overflow: auto;
+  height: auto;
+}
+
 .main-header {
   flex: 0 1 auto;
 }
 
-.logo-text {
-  background: white;
+.logo-text { /*changed this around a little-added diff background color */
+  background: rgb(110, 122, 162);
 
   text-align: center;
-  text-transform: uppercase;
-  font-family: lakeshore;
+  font-family: "Hoefler Text";
   font-size: 37px;
+}
+
+.logo-text2 { /* added this for second header */
+  text-align: center;
+  font-family: "Hoefler Text";
+  font-size: 25px;
 }
 
 .main-content {
