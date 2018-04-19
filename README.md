@@ -8,13 +8,15 @@ This project is designed to simulate a malware-ridden website and recreate some 
 All group members will contribute to the design of the basic webpage layout. Implementation of the seperate features outlined above will be divided between members, with 1-2 assigned to each.
 
 The members of this group are:
-Aaron SchultzII 
-Emily Seal 
-Jacob Iwaniec 
+Aaron SchultzII
+Emily Seal
+Jacob Iwaniec
 Michael Kling
 Richard Sekol
 Ryan Stuk
 
+
 Project Submission one contributions:
 
 Emily- Added a scroll bar, took out the duplicate boxes for the genres, added some background colors, changed the font of the title and the actual title itself, added a little blurb underneath title
+
