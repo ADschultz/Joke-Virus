@@ -16,9 +16,7 @@ Richard Sekol
 Ryan Stuk
 
 
+Project Submission one contributions:
 
-change logo
+Emily- Added a scroll bar, took out the duplicate boxes for the genres, added some background colors, changed the font of the title and the actual title itself, added a little blurb underneath title
 
-3/29/3028
-Richard made placeholder files and links
-started on form for his virus
