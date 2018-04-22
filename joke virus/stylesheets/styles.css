@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'lakeshore';
-  src: url('fonts/LAKESHOR-webfont.eot');
-  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/LAKESHOR-webfont.woff') format('woff'),
-       url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
-       url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+  font-family: '04B_30';
+  src: url('fonts/04B_30__.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'airstreamregular';
-  src: url('fonts/Airstream-webfont.eot');
-  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Airstream-webfont.woff') format('woff'),
-       url('fonts/Airstream-webfont.ttf') format('truetype'),
-       url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+  font-family: 'SFTransRobotics';
+  src: url('fonts/SFTransRobotics.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fipps-Regular';
+  src: url('fonts/Fipps-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,45 +26,48 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-
-  font-size: 10px;
-  background: rgb(47,79,79);
+  font-size: 18px;
+  background: black;
+  background-image: url('../img/ag_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  background-attachment: fixed;
 }
 
 a {
   text-decoration: none;
 }
 
-.scrollbar { /* Emily added this */
+/*.scrollbar { /* Emily added this
   display: block;
   width: auto;
   overflow: auto;
   height: auto;
-}
+}*/
 
 .main-header {
   flex: 0 1 auto;
 }
 
-.logo-text { /*changed this around a little-added diff background color */
+.title-text { /*changed this around a little-added diff background color */
   background: rgb(110, 122, 162);
-
   text-align: center;
-  font-family: "Hoefler Text";
+  font-family: "04B_30";
   font-size: 37px;
 }
 
-.logo-text2 { /* added this for second header */
+.logo-text { /* added this for second header */
   text-align: center;
-  font-family: "Hoefler Text";
+  font-family: "SFTransRobotics";
   font-size: 25px;
+  color: red;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0px 250px;
+  padding: 100px 450px;
 }
 
 .thumbnail-item {
@@ -74,7 +76,6 @@ a {
   max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
-
   transition: transform 133ms ease-in-out;
 }
 
@@ -95,102 +96,54 @@ a {
   display: block;
   margin: 0;
   padding: 4px 10px;
-
   background: rgb(22, 125, 139);
   color: rgb(202, 238, 255);
-
-  font-size: 18px;
+  font-family: "SFTransRobotics"
 }
 
 .thumbnail-title2 {
   display: block;
   margin: 0;
   padding: 4px 10px;
-
   background: rgb(25, 196, 34);
   color: rgb(0, 0, 0);
-
-  font-size: 18px;
+  font-family: "SFTransRobotics"
 }
 
 .thumbnail-title3 {
   display: block;
   margin: 0;
   padding: 4px 10px;
-
   background: rgb(183, 32, 18);
   color: rgb(201, 194, 193);
-
-  font-size: 18px;
+  font-family: "SFTransRobotics"
 }
 
 .thumbnail-title4 {
   display: block;
   margin: 0;
   padding: 4px 10px;
-
   background: rgb(16, 27, 237);
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-family: "SFTransRobotics"
 }
 
 .thumbnail-title5 {
   display: block;
   margin: 0;
   padding: 4px 10px;
-
   background: rgb(84, 36, 173);
   color: rgb(212, 214, 214);
-    font-size: 18px;
-  }
-
-
-
-.content-container {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "SFTransRobotics"
 }
 
-.content-frame {
-  position: relative;
-  text-align: center;
-
-  transition: transform 333ms cubic-bezier(1,.06,.28,1);
-}
-
-.is-tiny {
-  transform: scale(0.001);
-  transition: transform 0ms;
-}
-
-.content {
-  width: 90%;
-}
-
-.content-title {
-  position: absolute;
-  bottom: -16px;
-  left: 4px;
-
-  font-family: airstreamregular;
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
-  font-size: 40px;
-}
-
-.hidden-detail .content-container {
-  display: none;
-}
-
-.hidden-detail .thumbnail-list {
-  flex-direction: column;
-  align-items: center;
-}
-
-.hidden-detail .thumbnail-item {
-  max-width: 80%;
+.thumbnail-title6 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(241, 196, 15);
+  color: rgb(0, 0, 0);
+  font-family: "SFTransRobotics"
 }
 
 @media all and (min-width: 768px) {
@@ -207,7 +160,7 @@ a {
   }
 
   .thumbnail-item {
-    max-width: 260px;
+    max-width: 300px;
   }
 
   .thumbnail-item + .thumbnail-item {
