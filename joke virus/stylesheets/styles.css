@@ -38,12 +38,12 @@ a {
   text-decoration: none;
 }
 
-/*.scrollbar { /* Emily added this
+.scrollbar {  
   display: block;
   width: auto;
   overflow: auto;
   height: auto;
-}*/
+}
 
 .main-header {
   flex: 0 1 auto;
