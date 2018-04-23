@@ -1,7 +1,7 @@
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
 
 function popup() {
-  var printOut = window.open("http://localhost:3000/ryan_virus/moving_popup.html","_blank", 'height=500, width=750');
+  var printOut = window.open("ryan_virus/moving_popup.html","_blank", 'height=500, width=750');
   printOut.moveTo(1170*Math.random(),580*Math.random());
   printOut.onbeforeunload = function() {
     popup();
