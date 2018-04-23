@@ -38,7 +38,7 @@ a {
   text-decoration: none;
 }
 
-.scrollbar {  
+.scrollbar {
   display: block;
   width: auto;
   overflow: auto;
@@ -67,7 +67,9 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 100px 450px;
+  padding-top: 100px;
+  padding-left: 450px;
+  padding-right: 200px;
 }
 
 .thumbnail-item {
