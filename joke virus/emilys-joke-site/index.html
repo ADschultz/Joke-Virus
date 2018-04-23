@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<title>Home Insurance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: rgb(255, 0, 0);
+  border: 2px solid rgb(230, 18, 18);
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(255, 5, 5);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup2 {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(231, 244, 1);
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup3 {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(204, 121, 11);
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 5, 5);
+}
+
+.popup2 .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(243, 241, 245);
+}
+
+.popup3 .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 1, 10);
+}
+
+.popup .close:hover {
+  color: rgb(255, 5, 5);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>GOTCHA!<br>covered</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Disasters</a>
+    <a href="#popup1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What did I sign up for?</a>
+    <a href="#popup3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Oops</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<div id="popup1" class="overlay">
+<div class="popup2">
+  <h2>You signed up for a monthy payment of $299 a month sucker!</h2>
+  <a class="close" href="#">&times;</a>
+  <div class="content">
+    If you want to revert the charges, see our contact section.
+  </div>
+</div>
+</div>
+
+<div id="popup3" class="overlay">
+<div class="popup3">
+  <h2>Made a mistake?</h2>
+  <a class="close" href="#">&times;</a>
+  <div class="content">
+    See our contact sections to admit defeat.
+  </div>
+</div>
+</div>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome Home Owners!</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Thank you for signing up for our new home insurance agency.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="fireStockPhoto.jpg" style="width:100%" onclick="onClick(this)" alt="We don't cover this">
+      <img src="flood.jpg" style="width:100%" onclick="onClick(this)" alt="We definitely don't cover this">
+    </div>
+
+    <div class="w3-half">
+      <img src="tree.jpg" style="width:100%" onclick="onClick(this)" alt="Nope not this either">
+      <img src="tornado.jpg" style="width:100%" onclick="onClick(this)" alt="No">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>What did I sign up for?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a home insurance company that focuses on protecting our customers from not so common disasters!</p>
+    <p>By navigating to this site, you have agreed to our terms and services, and have signed up for our basic home owners insurance package, at only $299 per month.
+    </p>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Oops</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>If this is not what you have intended to do, we are sorry but there is no way to cancel your first monthly due payment.</p>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Our packages cover: </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Damages caused by Hauntings</li>
+        <li class="w3-padding-16">Damages caused by unconfirmed creatures ie.) bigfoot</li>
+        <li class="w3-padding-16">Damages caused by UFOs</li>
+        <li class="w3-padding-16">
+          <h2>$ 299</h2>
+          <span class="w3-opacity">a month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">All of the basic package damages</li>
+        <li class="w3-padding-16">Damages caused by space debris</li>
+        <li class="w3-padding-16">
+          <h2>$ 999</h2>
+          <span class="w3-opacity">a month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>If you have any questions you can fill out the information below and email us at weOnlyWantYourMoney@youmessedup.com</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Social Security Number</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <div class="w3-section">
+        <label>Credit Card Number</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <a class = "button" href="#popup2">Send Message</a>
+    </form>
+  </div>
+
+  <div id="popup2" class="overlay">
+	<div class="popup">
+		<h2>Thank you for your information</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			If you do not want to be charged a processing fee of $500, please close out of this box in the next 5 seconds!
+		</div>
+	</div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
