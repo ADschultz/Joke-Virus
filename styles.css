@@ -1,0 +1,171 @@
+@font-face {
+  font-family: '04B_30';
+  src: url('fonts/04B_30__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFTransRobotics';
+  src: url('fonts/SFTransRobotics.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fipps-Regular';
+  src: url('fonts/Fipps-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  background: black;
+  background-image: url('../img/ag_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+.scrollbar {
+  display: block;
+  width: auto;
+  overflow: auto;
+  height: auto;
+}
+
+.main-header {
+  flex: 0 1 auto;
+}
+
+.title-text { /*changed this around a little-added diff background color */
+  background: rgb(110, 122, 162);
+  text-align: center;
+  font-family: "04B_30";
+  font-size: 37px;
+}
+
+.logo-text { /* added this for second header */
+  text-align: center;
+  font-family: "SFTransRobotics";
+  font-size: 25px;
+  color: red;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-left: 450px;
+  padding-right: 200px;
+}
+
+.thumbnail-item {
+  display: inline-block;
+  min-width: 120px;
+  max-width: 120px;
+  border: 1px solid rgb(100%, 100%, 100%);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item:hover {
+  transform: scale(1.2);
+}
+
+.thumbnail-list {
+  flex-basis: 100%;
+}
+
+.thumbnail-image {
+  display: block;
+  width: 100%;
+}
+
+.thumbnail-title {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(22, 125, 139);
+  color: rgb(202, 238, 255);
+  font-family: "SFTransRobotics"
+}
+
+.thumbnail-title2 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(25, 196, 34);
+  color: rgb(0, 0, 0);
+  font-family: "SFTransRobotics"
+}
+
+.thumbnail-title3 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(183, 32, 18);
+  color: rgb(201, 194, 193);
+  font-family: "SFTransRobotics"
+}
+
+.thumbnail-title4 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(16, 27, 237);
+  color: rgb(255, 255, 255);
+  font-family: "SFTransRobotics"
+}
+
+.thumbnail-title5 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(84, 36, 173);
+  color: rgb(212, 214, 214);
+  font-family: "SFTransRobotics"
+}
+
+.thumbnail-title6 {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(241, 196, 15);
+  color: rgb(0, 0, 0);
+  font-family: "SFTransRobotics"
+}
+
+@media all and (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+    padding: 0 35px;
+  }
+
+  .thumbnail-item {
+    max-width: 300px;
+  }
+
+  .thumbnail-item + .thumbnail-item {
+    margin-top: 20px;
+  }
+}
